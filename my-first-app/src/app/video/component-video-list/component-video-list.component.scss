@@ -1,0 +1,37 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); // Sử dụng lưới với kích thước tối thiểu 200px
+  gap: 16px; // Khoảng cách giữa các video
+  padding: 10px; // Padding cho lưới
+}
+
+.video-item {
+  border: 1px solid #ddd; // Đường viền cho video
+  border-radius: 8px; // Bo góc
+  overflow: hidden; // Ẩn phần tràn
+  transition: transform 0.2s; // Hiệu ứng khi hover
+}
+
+.video-item:hover {
+  transform: scale(1.05); // Phóng to khi hover
+}
+
+.thumbnail {
+  width: 100%; // Chiều rộng hình thu nhỏ chiếm toàn bộ
+  height: auto; // Giữ tỉ lệ
+}
+
+.video-details {
+  padding: 8px; // Padding cho chi tiết video
+}
+
+h4 {
+  font-size: 14px; // Kích thước chữ tiêu đề
+  margin: 0; // Xóa khoảng cách mặc định
+}
+
+p {
+  margin: 0; // Xóa khoảng cách mặc định
+  font-size: 12px; // Kích thước chữ mô tả
+  color: #666; // Màu chữ mô tả
+}

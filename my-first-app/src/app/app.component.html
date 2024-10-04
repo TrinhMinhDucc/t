@@ -1,0 +1,10 @@
+<div class="home-page">
+  <app-component-header (toggleSidebar)="toggleSidebar()"></app-component-header>
+  <div class="content">
+    <app-component-sidebar *ngIf="sidebarOpen"></app-component-sidebar>
+    <div class="main-content">
+      <app-component-video-player [videoUrl]="videoUrl"></app-component-video-player>
+      <app-component-video-list (videoSelected)="onVideoSelect($event)"></app-component-video-list>
+    </div>
+  </div>
+</div>

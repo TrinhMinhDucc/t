@@ -1,0 +1,12 @@
+<header class="header">
+  <div class="logo">
+    <button class="hamburger-button" (click)="onToggleSidebar()">☰</button> <!-- Nút hamburger -->
+    <img src="assets/images/png-clipart-vidcon-us-youtube-logo-advertising-television-youtube-television-text-thumbnail.png" alt="Logo" />
+  </div>
+  <div class="user-actions">
+    <button pButton type="button" label="Đăng nhập"></button>
+  </div>
+  <div class="search-bar">
+    <p-autoComplete [(ngModel)]="searchQuery" [suggestions]="filteredVideos" (completeMethod)="search($event)" placeholder="Tìm kiếm"></p-autoComplete>
+  </div>
+</header>

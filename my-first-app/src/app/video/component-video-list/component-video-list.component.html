@@ -1,0 +1,10 @@
+<div class="video-grid">
+  <div class="video-item" *ngFor="let video of videos" (click)="viewVideo(video.id)">
+    <img class="thumbnail" [src]="video.snippet.thumbnails.medium.url" alt="{{ video.snippet.title }}" />
+    <div class="video-details">
+      <h4>{{ video.snippet.title }}</h4>
+      <p>{{ video.snippet.channelTitle }}</p> <!-- Tên kênh -->
+      <p>{{ video.snippet.publishedAt | date:'short' }}</p> <!-- Ngày đăng -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<!-- header.component.html -->
+<p-toolbar>
+  <div class="p-toolbar-group-left">
+    <button pButton type="button" class="topbar-menubuton" label="Menu" (click)="onToggleSidebar()">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="p-toolbar-title">
+      <img src="assets/images/png-clipart-official-dragonball-z-logo-dragon-ball-z.png" alt="" style="width: 100px; height: auto; margin-left: 10px;">
+    </div>
+  </div>
+  <div class="p-toolbar-group-center">
+    <p-autoComplete placeholder="Tìm kiếm sản phẩm..." [(ngModel)]="searchTerm"></p-autoComplete>
+    <button pButton type="button" class="topbar-menubuton" label="Tìm kiếm">
+      <i class="fa fa-search"></i>
+    </button>
+  </div>
+  <div class="p-toolbar-group-right">
+    <button pButton type="button" class="topbar-menubuton" label="Giỏ hàng">
+      <i class="fa fa-shopping-cart"></i>
+    </button>
+  </div>
+</p-toolbar>
