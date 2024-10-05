@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import { DataViewModule } from 'primeng/dataview';
 
 @Component({
   selector: 'app-component-card',
   standalone: true,
-  imports: [],
+  imports: [
+    DataViewModule 
+  ],
   templateUrl: './component-card.component.html',
-  styleUrl: './component-card.component.scss'
+  styleUrls: ['./component-card.component.scss']
 })
 export class ComponentCardComponent {
 
