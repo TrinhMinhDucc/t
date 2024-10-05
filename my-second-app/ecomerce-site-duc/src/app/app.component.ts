@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, importProvidersFrom } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ComponentHeaderComponent } from './components/component-header/component-header.component';
 import { ComponentSidebarComponent } from './components/component-sidebar/component-sidebar.component';
 import { provideAnimations } from '@angular/platform-browser/animations';
+import { ComponentBannerComponent } from './components/component-banner/component-banner.component';
+import { ComponentProductsListComponent } from './components/component-products-list/component-products-list.component';
+
 
 @Component({
   selector: 'app-root',
@@ -11,7 +14,8 @@ import { provideAnimations } from '@angular/platform-browser/animations';
     RouterOutlet,
     ComponentHeaderComponent,
     ComponentSidebarComponent,
-
+    ComponentBannerComponent,
+    ComponentProductsListComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

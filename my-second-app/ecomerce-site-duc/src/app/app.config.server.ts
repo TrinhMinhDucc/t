@@ -5,13 +5,14 @@ import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { importProvidersFrom } from '@angular/core';
 import { provideAnimations } from "@angular/platform-browser/animations";
-
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 const serverConfig: ApplicationConfig = {
   providers: [
     provideServerRendering(),
-    importProvidersFrom(SidebarModule, ButtonModule),
+    importProvidersFrom(SidebarModule,ButtonModule),
     provideAnimations(),
+    provideHttpClient(withFetch())
   ]
 };
 
